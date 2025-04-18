@@ -1,68 +1,96 @@
+
 # Cracker
 
-Cracker is a desktop application built using Python and Tkinter that allows users to extract slides from a YouTube video. This tool helps in extracting key frames (slides) from videos, based on a given frame interval and similarity threshold, and generates a PDF from the extracted slides.
+**Cracker** is a desktop application built using **Python** and **Tkinter** that allows users to extract slide-like frames from YouTube videos. It enables key frame detection based on a configurable frame interval and similarity threshold, then compiles the extracted frames into a downloadable PDF.
 
-## Features
+---
 
-- **Extract Slides**: Extract slides from a YouTube video by specifying the URL, frame interval, and similarity threshold.
-- **Generate PDF**: Generate a PDF document containing the extracted slides.
-- **Progress Indicator**: Real-time progress updates while processing the video.
+## 🚀 Features
 
-## Requirements
+- **Extract Slides from YouTube**: Provide a video URL and extract visually distinct frames.
+- **Customizable Settings**: Choose frame interval (in seconds) and frame similarity threshold.
+- **PDF Generation**: Automatically compile extracted slides into a clean PDF.
+- **Real-Time Progress Bar**: Stay updated with a progress bar while the video is being processed.
 
-This application requires Python 3.x and the following dependencies:
+---
 
-- `tkinter` (for the GUI)
-- `threading` (for background processing)
-- `subprocess` (for video downloading)
-- `Pillow` (for handling images)
-- `reportlab` (for generating PDFs)
-- `slide_extractor` (custom class for extracting slides from the video)
+## 📁 Project Structure
 
-To install these dependencies, you can use the following command:
-
-```bash
-pip install pillow reportlab
+```
+nishant-tiwari24-cracker/
+├── ReadMe.md
+├── LICENSE
+├── main.py                 # Entry point (GUI logic)
+├── requirements.txt        # Python dependencies
+└── slide_extractor.py      # Slide extraction logic
 ```
 
-Additionally, make sure you have the `slide_extractor.py` file, which contains the `SlideExtractor` class for the slide extraction logic.
+---
 
-## Setup Instructions
+## 🧩 Requirements
 
-1. Clone or download the repository to your local machine.
-2. Install the required Python libraries using the following:
+Ensure Python 3.7+ is installed. Then, install the necessary dependencies with:
+
+```bash
+pip install -r requirements.txt
+```
+
+**Dependencies include:**
+
+- `tkinter` – GUI library (usually comes with Python)
+- `pillow` – Image handling
+- `reportlab` – PDF generation
+- `opencv-python` – Frame processing
+- `numpy` – Image comparison
+- `pytube` – YouTube video downloading
+
+Make sure `tkinter` is installed (it is included with most Python distributions, but on Linux you may need to install it separately using your package manager).
+
+---
+
+## ⚙️ Setup Instructions
+
+1. **Clone the Repository**:
+
    ```bash
-   pip install pillow reportlab
+   git clone https://github.com/nishant-tiwari24/cracker.git
+   cd cracker
    ```
-3. Make sure the `slide_extractor.py` file is in the same directory as the script or correctly referenced.
 
-## Usage
+2. **Install Dependencies**:
 
-1. **Run the Application**: 
-   Execute the following command to start the application:
    ```bash
-   python slide_extractor_app.py
+   pip install -r requirements.txt
    ```
 
-2. **Enter YouTube Video URL**: 
-   Input the URL of the YouTube video from which you want to extract slides.
+3. **Run the Application**:
 
-3. **Set Frame Interval**: 
-   Define the frame interval (in seconds) at which the slides should be extracted.
+   ```bash
+   python main.py
+   ```
 
-4. **Set Similarity Threshold**: 
-   Specify the similarity threshold (between 0.0 and 1.0) for detecting similar frames. A higher threshold (close to 1.0) means that only very similar frames will be selected.
+---
 
-5. **Extract Slides**: 
-   Click the **Extract Slides** button to start the extraction process. The progress bar will show the current status of the operation.
+## 🧪 How to Use
 
-6. **Generate PDF**: 
-   Once the slides are extracted, you can click the **Generate PDF** button to create a PDF containing the extracted slides.
-   
-   You will be prompted to choose where to save the PDF.
+1. **Launch the App**: Run `main.py` to open the graphical interface.
+2. **Paste YouTube URL**: Enter the URL of the video you want to extract slides from.
+3. **Set Frame Interval**: Choose how frequently (in seconds) to extract frames.
+4. **Adjust Similarity Threshold**: Define how similar consecutive frames need to be (0.0 to 1.0).
+5. **Click "Extract Slides"**: The application will download the video and extract the slides.
+6. **Click "Generate PDF"**: Once extraction is complete, generate a PDF from the slides and save it.
 
-## Notes
+---
 
-- Ensure that you have a stable internet connection to download YouTube videos.
-- The extracted slides are saved to the `slides/` directory by default.
-- If you encounter any errors, make sure the `SlideExtractor` class is implemented correctly and has all the necessary logic for downloading and extracting slides from the video.
+## 📂 Output
+
+- Extracted slides are saved in a local `slides/` folder.
+- PDF output is saved to a location of your choice.
+
+---
+
+## 📝 Notes
+
+- A stable internet connection is required for downloading videos.
+- The application uses a custom `SlideExtractor` class defined in `slide_extractor.py`.
+- Make sure you have write permissions in the directory to save PDFs.
