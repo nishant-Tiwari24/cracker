@@ -2,19 +2,12 @@
 
 1. Clone or download the repository to your local machine.
 2. Install the required Python libraries using the following:
-   ```bash
-   pip install pillow reportlab
-   ```
 3. Make sure the `slide_extractor.py` file is in the same directory as the script or correctly referenced.
 
 ## Usage
 
 1. **Run the Application**: 
    Execute the following command to start the application:
-   ```bash
-   python slide_extractor_app.py
-   ```
-
 2. **Enter YouTube Video URL**: 
    Input the URL of the YouTube video from which you want to extract slides.
 
