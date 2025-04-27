@@ -22,5 +22,4 @@
 
 6. **Generate PDF**: 
    Once the slides are extracted, you can click the **Generate PDF** button to create a PDF containing the extracted slides.
-   
    You will be prompted to choose where to save the PDF.
