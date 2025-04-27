@@ -1,35 +1,3 @@
-Here's the markdown code for the `README.md`:
-
-```markdown
-# YouTube Slide Extractor
-
-The YouTube Slide Extractor is a desktop application built using Python and Tkinter that allows users to extract slides from a YouTube video. This tool helps in extracting key frames (slides) from videos, based on a given frame interval and similarity threshold, and generates a PDF from the extracted slides.
-
-## Features
-
-- **Extract Slides**: Extract slides from a YouTube video by specifying the URL, frame interval, and similarity threshold.
-- **Generate PDF**: Generate a PDF document containing the extracted slides.
-- **Progress Indicator**: Real-time progress updates while processing the video.
-
-## Requirements
-
-This application requires Python 3.x and the following dependencies:
-
-- `tkinter` (for the GUI)
-- `threading` (for background processing)
-- `subprocess` (for video downloading)
-- `Pillow` (for handling images)
-- `reportlab` (for generating PDFs)
-- `slide_extractor` (custom class for extracting slides from the video)
-
-To install these dependencies, you can use the following command:
-
-```bash
-pip install pillow reportlab
-```
-
-Additionally, make sure you have the `slide_extractor.py` file, which contains the `SlideExtractor` class for the slide extraction logic.
-
 ## Setup Instructions
 
 1. Clone or download the repository to your local machine.
@@ -63,16 +31,3 @@ Additionally, make sure you have the `slide_extractor.py` file, which contains t
    Once the slides are extracted, you can click the **Generate PDF** button to create a PDF containing the extracted slides.
    
    You will be prompted to choose where to save the PDF.
-
-## Notes
-
-- Ensure that you have a stable internet connection to download YouTube videos.
-- The extracted slides are saved to the `slides/` directory by default.
-- If you encounter any errors, make sure the `SlideExtractor` class is implemented correctly and has all the necessary logic for downloading and extracting slides from the video.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-You can copy this markdown code and save it as `README.md` in your project directory. Let me know if you need any further adjustments!
