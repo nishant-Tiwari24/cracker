@@ -1,6 +1,4 @@
-Here's the markdown code for the `README.md`:
 
-```markdown
 # YouTube Slide Extractor
 
 The YouTube Slide Extractor is a desktop application built using Python and Tkinter that allows users to extract slides from a YouTube video. This tool helps in extracting key frames (slides) from videos, based on a given frame interval and similarity threshold, and generates a PDF from the extracted slides.
@@ -37,7 +35,7 @@ Additionally, make sure you have the `slide_extractor.py` file, which contains t
    ```bash
    pip install pillow reportlab
    ```
-3. Make sure the `slide_extractor.py` file is in the same directory as the script or correctly referenced.
+3. Make sure the `.py` file is in the same directory as the script or correctly referenced.
 
 ## Usage
 
@@ -69,10 +67,3 @@ Additionally, make sure you have the `slide_extractor.py` file, which contains t
 - Ensure that you have a stable internet connection to download YouTube videos.
 - The extracted slides are saved to the `slides/` directory by default.
 - If you encounter any errors, make sure the `SlideExtractor` class is implemented correctly and has all the necessary logic for downloading and extracting slides from the video.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-You can copy this markdown code and save it as `README.md` in your project directory. Let me know if you need any further adjustments!
